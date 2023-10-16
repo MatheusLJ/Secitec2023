@@ -1,0 +1,14 @@
+{
+    "name": "mxtheus/secitec2023",
+    "autoload": {
+        "psr-4": {
+            "Mxtheus\\Secitec2023\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Matheus"
+        }
+    ],
+    "require": {}
+}
