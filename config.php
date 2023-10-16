@@ -2,7 +2,7 @@
 
 define('BASE', "http://localhost/secitec2023");
 define('VIEW', './app/view');
-define('TITULO', "Livro de Visitas 2º Ano");
+define('TITULO', "Tempo de Caos");
 
 define ('BD', [
     'banco' => "visitas_secitec",

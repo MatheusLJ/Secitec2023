@@ -1,3 +1,317 @@
-body{
-    background-color: gray;
+@font-face {
+    font-family: 'OldFont';
+    src: url(../fonts/legendaire/Legendaire\ FREE.ttf);
 }
+
+.lista ul::-webkit-scrollbar{
+    width: 10px;
+}
+.lista ul::-webkit-scrollbar-thumb{
+    background-color: rgb(110, 69, 36);
+}
+
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "OldFont", sans-serif;
+    font-weight: 500;
+}
+
+header{
+    position: fixed;
+    background: url(../img/fundo-de-papel-grunge-vintage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 6.25rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 20px 70px;
+    z-index: 99;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    position: relative;
+    font-size: 1.8em;
+    color: #000;
+}
+
+.navegacao{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navegacao a{
+    color: #000;
+    font-size: 1.9em;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+.navegacao a:hover{
+    text-decoration: underline;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/img_fundo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+main .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .box{
+    width: 60%;
+    height: 70%;
+    background-color: red;
+    z-index: 99;
+    margin-top: 100px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box form{
+    width: 50%;
+    height: 100%;
+    background: url(../img/fundo-de-papel-grunge-vintage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+    gap: 10px;
+    padding: 50px;
+    position: relative;
+}
+
+.box form .form-img1{
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    filter: blur(2px);
+}
+
+.box form .form-img2{
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: 110px;
+    height: 110px;
+    filter: blur(1px);
+}
+
+.box form .form-img3{
+    position: absolute;
+    left: 55px;
+    bottom: 0;
+    width: 120px;
+    height: 120px;
+}
+
+.box form input{
+    width: 20rem;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.6em;
+    border: 2px solid rgb(110, 69, 36);
+}
+
+.box form button{
+    width: 10rem;
+    height: 3rem;
+    background-color: transparent;
+    color: rgb(110, 69, 36);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(110, 69, 36);
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+}
+
+.box form button:hover{
+    background-color: rgb(110, 69, 36);
+    color: #fff;
+}
+
+form label{
+    font-size: 2em;
+}
+
+.box .imagem{
+    width: 50%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    background: url(../img/img_fundo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.box .lista{
+    width: 50%;
+    height: 100%;
+    background: url(../img/fundo-de-papel-grunge-vintage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lista h1{
+    font-size: 2em;
+    margin-top: 30px;
+}
+
+.lista ul{
+    width: 80%;
+    height: 90%;
+    background-color: #fff;
+    overflow-x: auto;
+    border-left: 3px solid rgb(110, 69, 36);
+    border-top: 3px solid rgb(110, 69, 36);
+    border-bottom: 3px solid rgb(110, 69, 36);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.lista ul li{
+    list-style: none;
+    color: rgb(110, 69, 36);
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.box-msg{
+    width: 50%;
+    height: 100%;
+    background: url(../img/fundo-de-papel-grunge-vintage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.parte-baixo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.box-msg h2{
+    font-size: 2em;
+}
+
+.box-msg button{
+    width: 10rem;
+    height: 3rem;
+    background-color: transparent;
+    color: rgb(110, 69, 36);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(110, 69, 36);
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.box-msg button:hover{
+    background-color: rgb(110, 69, 36);
+    color: #fff;
+}
+
+.box-404{
+    width: 50%;
+    height: 100%;
+    background: url(../img/fundo-de-papel-grunge-vintage.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box-404 h2{
+    font-size: 2em;
+    /* font-family: sans-serif; */
+}
+
+.box-404 button{
+    width: 10rem;
+    height: 3rem;
+    background-color: transparent;
+    color: rgb(110, 69, 36);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid rgb(110, 69, 36);
+    font-weight: 600;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.box-404 button:hover{
+    background-color: rgb(110, 69, 36);
+    color: #fff;
+}
+
