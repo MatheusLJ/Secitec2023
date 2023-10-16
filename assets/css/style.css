@@ -89,7 +89,6 @@ main .overlay{
 main .box{
     width: 60%;
     height: 70%;
-    background-color: red;
     z-index: 99;
     margin-top: 100px;
     border-radius: 10px;
@@ -290,7 +289,6 @@ form label{
 
 .box-404 h2{
     font-size: 2em;
-    /* font-family: sans-serif; */
 }
 
 .box-404 button{
