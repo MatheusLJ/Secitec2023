@@ -40,7 +40,7 @@ class VisitaController{
             }
 
         }else{
-            $msg = "Dados Inválidos! Nome precisa ter mais de 3 caracteres.";
+            $msg = "Dados inválidos! Nome precisa ter mais de 3 caracteres.";
         }
         
         $dados['titulo'] = TITULO;

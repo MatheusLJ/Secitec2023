@@ -147,8 +147,10 @@ main .box{
     outline: none;
     padding: 10px;
     border-radius: 5px;
-    font-size: 1.6em;
+    font-size: 1.4em;
     border: 2px solid rgb(110, 69, 36);
+    font-family: arial;
+    font-weight: bold;
 }
 
 .box form button{
@@ -165,6 +167,7 @@ main .box{
     font-size: 1em;
     text-transform: uppercase;
     transition: 0.3s ease-in-out;
+    letter-spacing: 2px;
 }
 
 .box form button:hover{
@@ -200,6 +203,8 @@ form label{
 
 .lista h1{
     font-size: 2em;
+    font-family: Arial;
+    font-weight: bold;
     margin-top: 30px;
 }
 
@@ -249,7 +254,10 @@ form label{
 }
 
 .box-msg h2{
-    font-size: 2em;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 1.6em;
+    max-width: 85%;
 }
 
 .box-msg button{
@@ -267,6 +275,7 @@ form label{
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.3s ease-in-out;
+    letter-spacing: 2px;
 }
 
 .box-msg button:hover{
@@ -306,6 +315,7 @@ form label{
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.3s ease-in-out;
+    letter-spacing: 2px;
 }
 
 .box-404 button:hover{
